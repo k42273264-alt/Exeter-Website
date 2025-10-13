@@ -610,9 +610,10 @@ body {
 }
 
 /* Wedding Section */
+/* Wedding Section */
 .wedding-section {
   padding: 100px 20px;
-  background: url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+  background: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
@@ -654,6 +655,67 @@ body {
   max-width: 700px;
   margin: 0 auto 20px;
 }
+
+.wedding-spaces {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.wedding-space {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: var(--light-color);
+}
+
+.wedding-space:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: var(--shadow-dark);
+}
+
+.wedding-space-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.wedding-space img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: auto;
+  transition: transform 0.5s ease;
+}
+
+.wedding-space:hover img {
+  transform: scale(1.1);
+}
+
+.wedding-space-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.wedding-space h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.wedding-space p {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: var(--dark-color);
+  line-height: 1.7;
+}
+
 
 /* Things To Do Section */
 .things-section {
